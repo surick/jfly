@@ -6670,3 +6670,135 @@ Caused by: java.net.ConnectException: Connection refused: connect
 2018-03-02 22:24:14 -==> Parameters: 
 2018-03-02 22:24:14 -<==      Total: 1
 2018-03-02 22:24:14 -Started BootdoApplication in 12.722 seconds (JVM running for 14.614)
+2018-03-02 22:43:39 -Starting BootdoApplication on DESKTOP-C4M9DI8 with PID 7712 (F:\IDEA_Workplace\jfly\target\classes started by hasee in F:\IDEA_Workplace\jfly)
+2018-03-02 22:43:39 -Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-03-02 22:43:39 -The following profiles are active: dev
+2018-03-02 22:43:46 -ApplicationContext registed-->org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@73e22a3d: startup date [Fri Mar 02 22:43:39 CST 2018]; root of context hierarchy
+2018-03-02 22:43:51 -==>  Preparing: select `id`,`cron_expression`,`method_name`,`is_concurrent`,`description`,`update_by`,`bean_class`,`create_date`,`job_status`,`job_group`,`update_date`,`create_by`,`spring_bean`,`job_name` from sys_task order by id desc 
+2018-03-02 22:43:51 -==> Parameters: 
+2018-03-02 22:43:51 -<==      Total: 1
+2018-03-02 22:43:51 -Started BootdoApplication in 12.68 seconds (JVM running for 14.835)
+2018-03-02 22:48:01 -请求地址 : http://localhost/
+2018-03-02 22:48:01 -HTTP METHOD : GET
+2018-03-02 22:48:01 -CLASS_METHOD : com.bootdo.system.controller.LoginController.welcome
+2018-03-02 22:48:01 -参数 : [{}]
+2018-03-02 22:48:01 -耗时 : 4
+2018-03-02 22:48:01 -返回值 : redirect:/blog
+2018-03-02 22:48:01 -请求地址 : http://localhost/blog
+2018-03-02 22:48:01 -HTTP METHOD : GET
+2018-03-02 22:48:01 -CLASS_METHOD : com.bootdo.blog.controller.BlogController.blog
+2018-03-02 22:48:01 -参数 : []
+2018-03-02 22:48:01 -耗时 : 0
+2018-03-02 22:48:01 -返回值 : blog/index/main
+2018-03-02 22:48:02 -请求地址 : http://localhost/blog/open/list
+2018-03-02 22:48:02 -HTTP METHOD : GET
+2018-03-02 22:48:02 -CLASS_METHOD : com.bootdo.blog.controller.BlogController.opentList
+2018-03-02 22:48:02 -参数 : [{type=article, limit=10, offset=0}]
+2018-03-02 22:48:02 -==>  Preparing: select `cid`,`title`,`slug`,`created`,`modified`,`content`,`type`,`tags`,`categories`,`hits`,`comments_num`,`allow_comment`,`allow_ping`,`allow_feed`,`status`,`author`,`gtm_create`,`gtm_modified` from blog_content WHERE type = ? order by cid desc limit 0, 10 
+2018-03-02 22:48:02 -==> Parameters: article(String)
+2018-03-02 22:48:02 -<==      Total: 0
+2018-03-02 22:48:02 -==>  Preparing: select count(*) from blog_content WHERE type = ? 
+2018-03-02 22:48:02 -==> Parameters: article(String)
+2018-03-02 22:48:02 -<==      Total: 1
+2018-03-02 22:48:02 -耗时 : 50
+2018-03-02 22:48:02 -返回值 : com.bootdo.common.utils.PageUtils@6b581bc1
+2018-03-02 22:48:03 -请求地址 : http://localhost/login
+2018-03-02 22:48:03 -HTTP METHOD : GET
+2018-03-02 22:48:03 -CLASS_METHOD : com.bootdo.system.controller.LoginController.login
+2018-03-02 22:48:03 -参数 : []
+2018-03-02 22:48:03 -耗时 : 1
+2018-03-02 22:48:03 -返回值 : login
+2018-03-02 22:48:23 -Starting BootdoApplication on DESKTOP-C4M9DI8 with PID 10672 (F:\IDEA_Workplace\jfly\target\classes started by hasee in F:\IDEA_Workplace\jfly)
+2018-03-02 22:48:23 -Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-03-02 22:48:23 -The following profiles are active: dev
+2018-03-02 22:48:32 -ApplicationContext registed-->org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@19976a65: startup date [Fri Mar 02 22:48:23 CST 2018]; root of context hierarchy
+2018-03-02 22:48:40 -==>  Preparing: select `id`,`cron_expression`,`method_name`,`is_concurrent`,`description`,`update_by`,`bean_class`,`create_date`,`job_status`,`job_group`,`update_date`,`create_by`,`spring_bean`,`job_name` from sys_task order by id desc 
+2018-03-02 22:48:40 -==> Parameters: 
+2018-03-02 22:48:40 -<==      Total: 1
+2018-03-02 22:48:40 -Started BootdoApplication in 17.81 seconds (JVM running for 19.69)
+2018-03-02 22:48:46 -请求地址 : http://localhost/login
+2018-03-02 22:48:46 -HTTP METHOD : GET
+2018-03-02 22:48:46 -CLASS_METHOD : com.bootdo.system.controller.LoginController.login
+2018-03-02 22:48:46 -参数 : []
+2018-03-02 22:48:46 -耗时 : 3
+2018-03-02 22:48:46 -返回值 : login
+2018-03-02 22:48:46 -请求地址 : http://localhost/login;JSESSIONID=5b80b4ac-b9fb-4839-bcd4-d3336bf9c261
+2018-03-02 22:48:46 -HTTP METHOD : GET
+2018-03-02 22:48:46 -CLASS_METHOD : com.bootdo.system.controller.LoginController.login
+2018-03-02 22:48:46 -参数 : []
+2018-03-02 22:48:46 -耗时 : 1
+2018-03-02 22:48:46 -返回值 : login
+2018-03-02 22:50:51 -Starting BootdoApplication on DESKTOP-C4M9DI8 with PID 1148 (F:\IDEA_Workplace\jfly\target\classes started by hasee in F:\IDEA_Workplace\jfly)
+2018-03-02 22:50:51 -Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-03-02 22:50:51 -The following profiles are active: dev
+2018-03-02 22:50:59 -ApplicationContext registed-->org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1951b871: startup date [Fri Mar 02 22:50:51 CST 2018]; root of context hierarchy
+2018-03-02 22:51:06 -==>  Preparing: select `id`,`cron_expression`,`method_name`,`is_concurrent`,`description`,`update_by`,`bean_class`,`create_date`,`job_status`,`job_group`,`update_date`,`create_by`,`spring_bean`,`job_name` from sys_task order by id desc 
+2018-03-02 22:51:06 -==> Parameters: 
+2018-03-02 22:51:06 -<==      Total: 1
+2018-03-02 22:51:06 -Started BootdoApplication in 15.503 seconds (JVM running for 17.877)
+2018-03-02 22:51:11 -请求地址 : http://localhost/login
+2018-03-02 22:51:11 -HTTP METHOD : GET
+2018-03-02 22:51:11 -CLASS_METHOD : com.bootdo.system.controller.LoginController.login
+2018-03-02 22:51:11 -参数 : []
+2018-03-02 22:51:11 -耗时 : 3
+2018-03-02 22:51:11 -返回值 : login
+2018-03-02 22:51:11 -请求地址 : http://localhost/login;JSESSIONID=a0a2a03f-de15-4dd0-8356-cb965199bb5f
+2018-03-02 22:51:11 -HTTP METHOD : GET
+2018-03-02 22:51:11 -CLASS_METHOD : com.bootdo.system.controller.LoginController.login
+2018-03-02 22:51:11 -参数 : []
+2018-03-02 22:51:11 -耗时 : 3
+2018-03-02 22:51:11 -返回值 : login
+2018-03-02 22:51:26 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2018-03-02 22:51:26 -==> Parameters: admin(String)
+2018-03-02 22:51:26 -<==      Total: 1
+2018-03-02 22:51:26 -请求地址 : http://localhost/login
+2018-03-02 22:51:26 -HTTP METHOD : POST
+2018-03-02 22:51:26 -CLASS_METHOD : com.bootdo.system.controller.LoginController.ajaxLogin
+2018-03-02 22:51:26 -参数 : [admin, root123]
+2018-03-02 22:51:26 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2018-03-02 22:51:26 -==> Parameters: admin(String)
+2018-03-02 22:51:26 -<==      Total: 1
+2018-03-02 22:51:26 -耗时 : 11
+2018-03-02 22:51:26 -返回值 : {msg=操作成功, code=0}
+2018-03-02 22:51:26 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2018-03-02 22:51:26 -==> Parameters: 1(Long), admin(String), 登录(String), 12(Integer), com.bootdo.system.controller.LoginController.ajaxLogin()(String), null, 127.0.0.1(String), 2018-03-02 22:51:26.914(Timestamp)
+2018-03-02 22:51:26 -<==    Updates: 1
+2018-03-02 22:51:26 -请求地址 : http://localhost/index
+2018-03-02 22:51:26 -HTTP METHOD : GET
+2018-03-02 22:51:26 -CLASS_METHOD : com.bootdo.system.controller.LoginController.index
+2018-03-02 22:51:26 -参数 : [{}]
+2018-03-02 22:51:26 -==>  Preparing: select distinct m.menu_id , parent_id, name, url, perms,`type`,icon,order_num,gmt_create, gmt_modified from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id =ur.role_id where ur.user_id = ? and m.type in(0,1) order by m.order_num 
+2018-03-02 22:51:26 -==> Parameters: 1(Long)
+2018-03-02 22:51:27 -<==      Total: 28
+2018-03-02 22:51:27 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file where id = ? 
+2018-03-02 22:51:27 -==> Parameters: 142(Long)
+2018-03-02 22:51:27 -<==      Total: 1
+2018-03-02 22:51:27 -耗时 : 83
+2018-03-02 22:51:27 -返回值 : index_v1
+2018-03-02 22:51:27 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2018-03-02 22:51:27 -==> Parameters: 1(Long), admin(String), 请求访问主页(String), 83(Integer), com.bootdo.system.controller.LoginController.index()(String), null, 127.0.0.1(String), 2018-03-02 22:51:27.079(Timestamp)
+2018-03-02 22:51:27 -<==    Updates: 1
+2018-03-02 22:51:27 -请求地址 : http://localhost/main
+2018-03-02 22:51:27 -HTTP METHOD : GET
+2018-03-02 22:51:27 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2018-03-02 22:51:27 -参数 : []
+2018-03-02 22:51:27 -耗时 : 0
+2018-03-02 22:51:27 -返回值 : main
+2018-03-02 22:51:27 -请求地址 : http://localhost/oa/notify/message
+2018-03-02 22:51:27 -HTTP METHOD : GET
+2018-03-02 22:51:27 -CLASS_METHOD : com.bootdo.oa.controller.NotifyController.message
+2018-03-02 22:51:27 -参数 : []
+2018-03-02 22:51:27 -==>  Preparing: select DISTINCT n.id ,`type`,`title`,`content`,`files`,r.is_read,`status`,`create_by`,`create_date`,`update_by`,`update_date`,`remarks`,`del_flag` from oa_notify_record r right JOIN oa_notify n on r.notify_id = n.id WHERE r.is_read = ? and r.user_id = ? order by is_read ASC, update_date DESC limit ?, ? 
+2018-03-02 22:51:27 -==> Parameters: 0(String), 1(Long), 0(Integer), 3(Integer)
+2018-03-02 22:51:27 -<==      Total: 0
+2018-03-02 22:51:27 -==>  Preparing: select count(*) from oa_notify_record r right JOIN oa_notify n on r.notify_id = n.id where r.user_id =? and r.is_read = ? 
+2018-03-02 22:51:27 -==> Parameters: 1(Long), 0(String)
+2018-03-02 22:51:27 -<==      Total: 1
+2018-03-02 22:51:27 -耗时 : 30
+2018-03-02 22:51:27 -返回值 : com.bootdo.common.utils.PageUtils@5600fd0f
+2018-03-02 22:51:27 -请求地址 : http://localhost/main
+2018-03-02 22:51:27 -HTTP METHOD : GET
+2018-03-02 22:51:27 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2018-03-02 22:51:27 -参数 : []
+2018-03-02 22:51:27 -耗时 : 0
+2018-03-02 22:51:27 -返回值 : main
