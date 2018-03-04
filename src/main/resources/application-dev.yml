@@ -1,9 +1,9 @@
-bootdo:
+jfly:
   uploadPath: D:/var/uploaded_files/
 logging:
   level:
     root: error
-    com.bootdo: debug
+    com.jfly: debug
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
