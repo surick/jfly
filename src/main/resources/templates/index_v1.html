@@ -30,33 +30,29 @@
                 <li class="nav-header">
                     <div>
                         <span><img alt="image" class="img-circle" height="60" width="60" th:src="${picUrl}"/></span>
-                        <h3 class="" style="color: #ffffff">
+                       <!-- <h3 class="" style="color: #ffffff">
                             </i>JFly后台管理系统
-                        </h3>
+                        </h3>-->
                     </div>
-                    <div class="dropdown profile-element hidden">
+                    <div class="dropdown profile-element">
 
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <span class="clear">
                             <span class="block m-t-xs"><strong class="font-bold"
-                                                               th:text="${username}">admin</strong></span>
-                            <span class="text-muted text-xs block">超级管理员<b class="caret"></b></span>
+                                                               th:text="${name}"></strong></span>
+                            <span class="text-muted text-xs block"><em th:text="${email}"></em><b class="caret"></b></span>
                              </span>
                         </a>
                         <ul class="dropdown-menu animated fadeInRight m-t-xs">
-                            <li><a @click="personal" href="#">修改头像</a>
-                            </li>
                             <li><a @click="personal" href="#">个人资料</a>
                             </li>
                             <li><a @click="personal" href="#">密码修改</a>
-                            </li>
-                            <li><a @click="personal" href="#">信箱</a>
                             </li>
                             <li class="divider"></li>
                             <li><a href="/logout">安全退出</a>
                             </li>
                         </ul>
-                        <div class="logo-element">BootDo</div>
+                        <div class="logo-element">JFly</div>
                     </div>
                 </li>
                 <li><a href="#"> <i class="fa fa-home"></i> <span
@@ -64,18 +60,19 @@
                 </a>
                     <ul class="nav nav-second-level">
                         <li><a id="index001" class="J_menuItem" href="index_v1.html"
-                               data-index="0" th:href="@{/main}">了解JFly</a></li>
+                               data-index="0" th:href="@{/main}">工作台</a></li>
                     </ul>
                 </li>
-                <li th:each="menu : ${menus}"><a href="#"> <i
-                        class="fa fa fa-bar-chart-o" th:class="${menu.attributes.icon}"></i>
-                    <span class="nav-label" th:text="${menu.text}">基础信息</span> <span
-                            class="fa arrow"></span>
-                </a>
+                <li th:each="menu : ${menus}">
+                    <a href="#">
+                    <i class="fa fa fa-bar-chart-o" th:class="${menu.attributes.icon}"></i>
+                    <span class="nav-label" th:text="${menu.text}"></span>
+                        <span class="fa arrow"></span>
+                    </a>
                     <ul class="nav nav-second-level">
-                        <li th:each="cmenu : ${menu.children}"><a class="J_menuItem" href="graph_echarts.html"
-                                                                  th:text="${cmenu.text}"
-                                                                  th:href="${cmenu.attributes.url}">系统管理</a></li>
+                        <li th:each="cmenu : ${menu.children}">
+                            <a class="J_menuItem" href="#" th:text="${cmenu.text}" th:href="${cmenu.attributes.url}"></a>
+                        </li>
                     </ul>
                 </li>
             </ul>
@@ -94,23 +91,23 @@
                     <form role="search" class="navbar-form-custom"
                           method="post" action="">
                         <div class="form-group">
-                            <input type="text" placeholder="请输入您需要查找的内容 …"
+                            <input type="text" placeholder="请输入您需要查找的内容 …(开发中)"
                                    class="form-control" name="top-search" id="top-search">
                         </div>
                     </form>
                 </div>
                 <ul class="nav navbar-top-links navbar-right">
                     <li class="hidden-xs"><a href="/blog" target="_Blank"
-                                             class=""><i class="fa fa-rss-square"></i>博客</a></li>
+                                             class=""><i class="fa fa-rss-square"></i>资讯</a></li>
                     <li class="dropdown"><a class="dropdown-toggle count-info"
-                                            data-toggle="dropdown" href="#"> <i class="fa fa-envelope"></i>
+                                            data-toggle="dropdown" href="#"> <i class="fa fa-bell"></i>
                         <span class="label label-warning">{{total}}</span>通知
                     </a>
                         <ul class="dropdown-menu dropdown-messages">
                             <li v-for="row in rows" class="m-t-xs">
                                 <div class="dropdown-messages-box">
                                     <a class="pull-left"> <i
-                                            class="fa fa-server"></i>
+                                            class="fa fa-comment"></i>
                                     </a>
                                     <div class="media-body">
                                         <small class="pull-right">{{row.before}}</small>
@@ -130,7 +127,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="hidden-xs"><a @click="personal" href="#" ><i class="fa fa-id-card"></i> 个人</a></li>
+                    <!--<li class="hidden-xs"><a @click="personal" href="#" ><i class="fa fa-id-card"></i> 个人</a></li>-->
                     <li class="dropdown hidden-xs"><a
                             class="right-sidebar-toggle" aria-expanded="false"> <i
                             class="fa fa-tasks"></i> 主题
@@ -171,7 +168,7 @@
                     seamless></iframe>
         </div>
         <div class="footer">
-            <div class="pull-right">XXXX</div>
+            <div class="pull-right">JFly</div>
         </div>
     </div>
     <!--右侧部分结束-->
