@@ -9,10 +9,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.zip.DataFormatException;
 
-/**
- * @author gaoyuzhe
- * @date 2017/12/14.
- */
 @Configuration
 public class DateConverConfig {
     @Bean

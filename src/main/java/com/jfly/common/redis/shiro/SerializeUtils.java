@@ -10,7 +10,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * @author jfly 1992lcg@163.com
+ * @author jfly
  * @version V1.0
  */
 public class SerializeUtils {

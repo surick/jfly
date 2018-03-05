@@ -1,6 +1,6 @@
 package com.jfly.common.service.impl;
 
-import com.jfly.common.config.BootdoConfig;
+import com.jfly.common.config.JflyConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +11,6 @@ import java.util.Map;
 import com.jfly.common.dao.FileDao;
 import com.jfly.common.domain.FileDO;
 import com.jfly.common.service.FileService;
-import org.springframework.util.Assert;
 import org.springframework.util.StringUtils;
 
 
@@ -21,7 +20,7 @@ public class FileServiceImpl implements FileService {
 	private FileDao sysFileMapper;
 
 	@Autowired
-	private BootdoConfig bootdoConfig;
+	private JflyConfig jflyConfig;
 	@Override
 	public FileDO get(Long id){
 		return sysFileMapper.get(id);
@@ -62,7 +61,7 @@ public class FileServiceImpl implements FileService {
 		Boolean isExist = false;
 		if (!StringUtils.isEmpty(url)) {
 			String filePath = url.replace("/files/", "");
-			filePath = bootdoConfig.getUploadPath() + filePath;
+			filePath = jflyConfig.getUploadPath() + filePath;
 			File file = new File(filePath);
 			if (file.exists()) {
 				isExist = true;

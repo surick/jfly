@@ -4,7 +4,7 @@ import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;
 import java.util.*;
 
-import com.jfly.common.config.BootdoConfig;
+import com.jfly.common.config.JflyConfig;
 import com.jfly.common.domain.FileDO;
 import com.jfly.common.service.FileService;
 import com.jfly.common.utils.*;
@@ -40,7 +40,7 @@ public class UserServiceImpl implements UserService {
 	@Autowired
 	private FileService sysFileService;
 	@Autowired
-	private BootdoConfig bootdoConfig;
+	private JflyConfig jflyConfig;
 	private static final Logger logger = LoggerFactory.getLogger(UserService.class);
 
 	@Override
@@ -220,7 +220,7 @@ public class UserServiceImpl implements UserService {
 			boolean flag = ImageIO.write(rotateImage, prefix, out);
 			//转换后存入数据库
 			byte[] b = out.toByteArray();
-			FileUtil.uploadFile(b, bootdoConfig.getUploadPath(), fileName);
+			FileUtil.uploadFile(b, jflyConfig.getUploadPath(), fileName);
 		} catch (Exception e) {
 			throw  new Exception("图片裁剪错误！！");
 		}

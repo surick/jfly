@@ -1,7 +1,7 @@
 package com.jfly.common.redis.shiro;
 
 /**
- * @author jfly 1992lcg@163.com
+ * @author jfly
  * @version V1.0
  */
 

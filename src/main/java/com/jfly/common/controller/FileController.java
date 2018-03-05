@@ -1,6 +1,6 @@
 package com.jfly.common.controller;
 
-import com.jfly.common.config.BootdoConfig;
+import com.jfly.common.config.JflyConfig;
 import com.jfly.common.domain.FileDO;
 import com.jfly.common.service.FileService;
 import com.jfly.common.utils.*;
@@ -19,10 +19,7 @@ import java.util.Map;
 
 /**
  * 文件上传
- * 
- * @author chglee
- * @email 1992lcg@163.com
- * @date 2017-09-19 16:02:20
+ *
  */
 @Controller
 @RequestMapping("/common/sysFile")
@@ -32,7 +29,7 @@ public class FileController extends BaseController {
 	private FileService sysFileService;
 
 	@Autowired
-	private BootdoConfig bootdoConfig;
+	private JflyConfig jflyConfig;
 
 	@GetMapping()
 	@RequiresPermissions("common:sysFile:sysFile")
@@ -111,7 +108,7 @@ public class FileController extends BaseController {
 		if ("test".equals(getUsername())) {
 			return R.error(1, "演示系统不允许修改,完整体验请部署程序");
 		}
-		String fileName = bootdoConfig.getUploadPath() + sysFileService.get(id).getUrl().replace("/files/", "");
+		String fileName = jflyConfig.getUploadPath() + sysFileService.get(id).getUrl().replace("/files/", "");
 		if (sysFileService.remove(id) > 0) {
 			boolean b = FileUtil.deleteFile(fileName);
 			if (!b) {
@@ -147,7 +144,7 @@ public class FileController extends BaseController {
 		fileName = FileUtil.renameToUUID(fileName);
 		FileDO sysFile = new FileDO(FileType.fileType(fileName), "/files/" + fileName, new Date());
 		try {
-			FileUtil.uploadFile(file.getBytes(), bootdoConfig.getUploadPath(), fileName);
+			FileUtil.uploadFile(file.getBytes(), jflyConfig.getUploadPath(), fileName);
 		} catch (Exception e) {
 			return R.error();
 		}

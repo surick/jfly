@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * @Author jfly 1992lcg@163.com
+ * @Author jfly
  */
 public class  PageUtils implements Serializable {
 	private static final long serialVersionUID = 1L;

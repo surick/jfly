@@ -6,9 +6,6 @@ import java.util.Date;
 /**
  * 文件上传
  *
- * @author chglee
- * @email 1992lcg@163.com
- * @date 2017-09-19 16:02:20
  */
 public class FileDO implements Serializable {
     private static final long serialVersionUID = 1L;

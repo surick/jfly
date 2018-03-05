@@ -31,8 +31,7 @@ import com.jfly.common.utils.SpringContextHolder;;
 
 /**
  * 
- * 
- * @title: QuartzManager.java
+ *
  * @description: 计划任务管理
  *
  */

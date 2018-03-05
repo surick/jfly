@@ -3,8 +3,6 @@ package com.jfly.system.vo;
 import com.jfly.system.domain.UserDO;
 
 /**
- * @author gaoyuzhe
- * @date 2017/12/15.
  */
 public class UserVO {
     /**

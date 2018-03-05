@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @ConfigurationProperties(prefix="jfly")
-public class BootdoConfig {
+public class JflyConfig {
 	//上传路径
 	private String uploadPath;
 

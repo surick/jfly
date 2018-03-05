@@ -3,7 +3,7 @@ package com.jfly.system.domain;
 import java.io.Serializable;
 
 /**
- * @author jfly 1992lcg@163.com
+ * @author jfly
  * @version V1.0
  */
 public class UserToken implements Serializable {
