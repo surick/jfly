@@ -60,7 +60,7 @@
                 </a>
                     <ul class="nav nav-second-level">
                         <li><a id="index001" class="J_menuItem" href="index_v1.html"
-                               data-index="0" th:href="@{/main}">工作台</a></li>
+                               data-index="0" th:href="@{/main}"><i class="fa fa-fa fa-dashboard"></i> 个人工作台</a></li>
                     </ul>
                 </li>
                 <li th:each="menu : ${menus}">
@@ -71,7 +71,10 @@
                     </a>
                     <ul class="nav nav-second-level">
                         <li th:each="cmenu : ${menu.children}">
-                            <a class="J_menuItem" href="#" th:text="${cmenu.text}" th:href="${cmenu.attributes.url}"></a>
+                            <a class="J_menuItem" href="#" th:href="${cmenu.attributes.url}">
+                                <i class="fa fa fa-bar-chart-o" th:class="${cmenu.attributes.icon}"></i>
+                                <span class="nav-label" th:text="${cmenu.text}"></span>
+                            </a>
                         </li>
                     </ul>
                 </li>
