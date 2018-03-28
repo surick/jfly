@@ -1,5 +1,5 @@
 server:
-    # context-path: /myboot 
+    # context-path: /jfly
   session-timeout: 1800
 #    tomcat:
 #        max-threads: 1000
