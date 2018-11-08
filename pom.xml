@@ -6,7 +6,7 @@
     <groupId>com.github</groupId>
     <artifactId>jfly</artifactId>
     <version>1.0.0</version>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
 
     <name>jfly</name>
     <description>Demo project for Spring Boot</description>
