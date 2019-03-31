@@ -2630,3 +2630,35 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2018-03-04 16:10:02 -<==      Total: 1
 2018-03-04 16:10:02 -耗时 : 7
 2018-03-04 16:10:02 -返回值 : com.jfly.common.utils.PageUtils@54d5689e
+2018-03-04 19:09:41 -Starting JFlyApplication on DESKTOP-C4M9DI8 with PID 7904 (F:\IDEA_workspace\jfly\target\classes started by hasee in F:\IDEA_workspace\jfly)
+2018-03-04 19:09:41 -Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-03-04 19:09:41 -The following profiles are active: dev
+2018-03-04 19:09:49 -ApplicationContext registed-->org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3232a28a: startup date [Sun Mar 04 19:09:41 CST 2018]; root of context hierarchy
+2018-03-04 19:09:55 -==>  Preparing: select `id`,`cron_expression`,`method_name`,`is_concurrent`,`description`,`update_by`,`bean_class`,`create_date`,`job_status`,`job_group`,`update_date`,`create_by`,`spring_bean`,`job_name` from sys_task order by id desc 
+2018-03-04 19:09:55 -==> Parameters: 
+2018-03-04 19:09:55 -<==      Total: 1
+2018-03-04 19:09:55 -Started JFlyApplication in 14.343 seconds (JVM running for 16.152)
+2018-03-04 19:10:11 -请求地址 : http://localhost/
+2018-03-04 19:10:11 -HTTP METHOD : GET
+2018-03-04 19:10:11 -CLASS_METHOD : com.jfly.system.controller.LoginController.welcome
+2018-03-04 19:10:11 -参数 : [{}]
+2018-03-04 19:10:11 -耗时 : 2
+2018-03-04 19:10:11 -返回值 : redirect:/blog
+2018-03-04 19:10:11 -请求地址 : http://localhost/blog
+2018-03-04 19:10:11 -HTTP METHOD : GET
+2018-03-04 19:10:11 -CLASS_METHOD : com.jfly.blog.controller.BlogController.blog
+2018-03-04 19:10:11 -参数 : []
+2018-03-04 19:10:11 -耗时 : 0
+2018-03-04 19:10:11 -返回值 : blog/index/main
+2018-03-04 19:10:12 -请求地址 : http://localhost/blog/open/list
+2018-03-04 19:10:12 -HTTP METHOD : GET
+2018-03-04 19:10:12 -CLASS_METHOD : com.jfly.blog.controller.BlogController.opentList
+2018-03-04 19:10:12 -参数 : [{type=article, limit=10, offset=0}]
+2018-03-04 19:10:12 -==>  Preparing: select `cid`,`title`,`slug`,`created`,`modified`,`content`,`type`,`tags`,`categories`,`hits`,`comments_num`,`allow_comment`,`allow_ping`,`allow_feed`,`status`,`author`,`gtm_create`,`gtm_modified` from blog_content WHERE type = ? order by cid desc limit 0, 10 
+2018-03-04 19:10:12 -==> Parameters: article(String)
+2018-03-04 19:10:12 -<==      Total: 1
+2018-03-04 19:10:12 -==>  Preparing: select count(*) from blog_content WHERE type = ? 
+2018-03-04 19:10:12 -==> Parameters: article(String)
+2018-03-04 19:10:12 -<==      Total: 1
+2018-03-04 19:10:12 -耗时 : 36
+2018-03-04 19:10:12 -返回值 : com.jfly.common.utils.PageUtils@441baf39
