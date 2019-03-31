@@ -1,0 +1,63 @@
+2018-03-07 14:12:15 -Starting JFlyApplication on W7010-10633-B8C with PID 6764 (started by w24164 in C:\Program Files\JetBrains\IntelliJ IDEA 2017.3.1\jfly)
+2018-03-07 14:12:15 -The following profiles are active: pro
+2018-03-07 14:12:27 -Started JFlyApplication in 12.455 seconds (JVM running for 14.963)
+2018-03-07 14:13:09 -请求地址 : http://localhost:81/
+2018-03-07 14:13:09 -HTTP METHOD : GET
+2018-03-07 14:13:09 -CLASS_METHOD : com.jfly.system.controller.LoginController.welcome
+2018-03-07 14:13:09 -参数 : [{}]
+2018-03-07 14:13:09 -耗时 : 2
+2018-03-07 14:13:09 -请求地址 : http://localhost:81/blog
+2018-03-07 14:13:09 -HTTP METHOD : GET
+2018-03-07 14:13:09 -CLASS_METHOD : com.jfly.blog.controller.BlogController.blog
+2018-03-07 14:13:09 -参数 : []
+2018-03-07 14:13:09 -耗时 : 0
+2018-03-07 14:13:09 -请求地址 : http://localhost:81/blog/open/list
+2018-03-07 14:13:09 -HTTP METHOD : GET
+2018-03-07 14:13:09 -CLASS_METHOD : com.jfly.blog.controller.BlogController.opentList
+2018-03-07 14:13:09 -参数 : [{type=article, limit=10, offset=0}]
+2018-03-07 14:13:09 -耗时 : 30
+2018-03-07 14:13:11 -请求地址 : http://localhost:81/
+2018-03-07 14:13:11 -HTTP METHOD : GET
+2018-03-07 14:13:11 -CLASS_METHOD : com.jfly.system.controller.LoginController.welcome
+2018-03-07 14:13:11 -参数 : [{}]
+2018-03-07 14:13:11 -耗时 : 0
+2018-03-07 14:13:11 -请求地址 : http://localhost:81/blog
+2018-03-07 14:13:11 -HTTP METHOD : GET
+2018-03-07 14:13:11 -CLASS_METHOD : com.jfly.blog.controller.BlogController.blog
+2018-03-07 14:13:11 -参数 : []
+2018-03-07 14:13:11 -耗时 : 1
+2018-03-07 14:13:11 -请求地址 : http://localhost:81/blog/open/list
+2018-03-07 14:13:11 -HTTP METHOD : GET
+2018-03-07 14:13:11 -CLASS_METHOD : com.jfly.blog.controller.BlogController.opentList
+2018-03-07 14:13:11 -参数 : [{type=article, limit=10, offset=0}]
+2018-03-07 14:13:11 -耗时 : 7
+2018-03-07 14:13:14 -请求地址 : http://localhost:81/login
+2018-03-07 14:13:14 -HTTP METHOD : GET
+2018-03-07 14:13:14 -CLASS_METHOD : com.jfly.system.controller.LoginController.login
+2018-03-07 14:13:14 -参数 : []
+2018-03-07 14:13:14 -耗时 : 0
+2018-03-07 14:13:19 -请求地址 : http://localhost:81/login
+2018-03-07 14:13:19 -HTTP METHOD : POST
+2018-03-07 14:13:19 -CLASS_METHOD : com.jfly.system.controller.LoginController.ajaxLogin
+2018-03-07 14:13:19 -参数 : [admin, root123]
+2018-03-07 14:13:19 -耗时 : 13
+2018-03-07 14:13:19 -请求地址 : http://localhost:81/index
+2018-03-07 14:13:19 -HTTP METHOD : GET
+2018-03-07 14:13:19 -CLASS_METHOD : com.jfly.system.controller.LoginController.index
+2018-03-07 14:13:19 -参数 : [{}]
+2018-03-07 14:13:19 -耗时 : 39
+2018-03-07 14:13:19 -请求地址 : http://localhost:81/main
+2018-03-07 14:13:19 -HTTP METHOD : GET
+2018-03-07 14:13:19 -CLASS_METHOD : com.jfly.system.controller.LoginController.main
+2018-03-07 14:13:19 -参数 : []
+2018-03-07 14:13:19 -耗时 : 0
+2018-03-07 14:13:20 -请求地址 : http://localhost:81/oa/notify/message
+2018-03-07 14:13:20 -HTTP METHOD : GET
+2018-03-07 14:13:20 -CLASS_METHOD : com.jfly.oa.controller.NotifyController.message
+2018-03-07 14:13:20 -参数 : []
+2018-03-07 14:13:20 -耗时 : 5
+2018-03-07 14:13:20 -请求地址 : http://localhost:81/main
+2018-03-07 14:13:20 -HTTP METHOD : GET
+2018-03-07 14:13:20 -CLASS_METHOD : com.jfly.system.controller.LoginController.main
+2018-03-07 14:13:20 -参数 : []
+2018-03-07 14:13:20 -耗时 : 1
